@@ -9,11 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<<<<<<< HEAD
-<meta name="author" content="Group Members: Niamh Wexelstein, Jason Gunn, Xuyan Wang and user4" />
-=======
 <meta name="author" content="Group Members: Niamh Wexelstein, Aliya Mosha, Xuyan Wang, Samuel and Jason" />
->>>>>>> 5b6e324f7cbf5cef41133d81f6e2295393345617
 
 <meta name="date" content="2022-10-07" />
 
@@ -362,13 +358,8 @@ display: none;
 
 <h1 class="title toc-ignore">Lab 02 - Take a sad plot and make it
 better</h1>
-<<<<<<< HEAD
-<h4 class="author">Group Members: Niamh Wexelstein, Jason Gunn, Xuyan
-Wang and user4</h4>
-=======
 <h4 class="author">Group Members: Niamh Wexelstein, Aliya Mosha, Xuyan
 Wang, Samuel and Jason</h4>
->>>>>>> 5b6e324f7cbf5cef41133d81f6e2295393345617
 <h4 class="date">2022-10-07</h4>
 
 </div>
@@ -390,12 +381,12 @@ Wang, Samuel and Jason</h4>
 <div id="exercise-2" class="section level3">
 <h3>Exercise 2</h3>
 <pre class="r"><code># uncomment and edit the code below
-#staff_long &lt;- ___ %&gt;%
-#  ___(
-#    cols = ___, 
-#    names_to = &quot;___&quot;,
-#    values_to = &quot;___&quot;
-#    )</code></pre>
+staff_long &lt;- staff %&gt;%
+ pivot_longer(
+    cols = -faculty_type, 
+    names_to = &quot;years&quot;,
+    values_to = &quot;values&quot;
+    )</code></pre>
 </div>
 <div id="exercise-3" class="section level3">
 <h3>Exercise 3</h3>
